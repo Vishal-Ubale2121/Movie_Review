@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+{% extends 'base.html' %}
+{% include 'navbar.html' %}
+{% block content %}
+ {% load staticfiles %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}"/>
+<center>
+
+    <body style="background-color:#B9A9E6">
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <title>Index</title>  
+
+</head>  
+<body>  
+<form method="POST" class="post-form" action="/emp">
+        {% csrf_token %}
+    <div class="container">  
+<br>
+
+    <div class="form-group">
+    <label class="col-sm-1 col-form-label"></label>  
+    <div class="col-sm-4">
+    <h2>How was the movie..!</h2>
+    </div>  
+  </div>
+
+<div class="container-fluid">
+    <h2><span class="label label-default"></span></h2>
+    <div class="col-sm-4">
+      {{ form.movie }}
+    </div>
+  </div>
+<br>
+        <br>
+        <br>
+
+    <div class="form-group row">  
+    <label class="col-sm-2 col-form-label">Person1:</label>
+    <div class="col-sm-4">  
+      {{ form.name1 }}
+    </div>  
+  </div>
+
+  <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Person2:</label>
+    <div class="col-sm-4">
+      {{ form.name2 }}
+    </div>
+  </div>
+
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Person3:</label>
+    <div class="col-sm-4">
+      {{ form.name3 }}
+    </div>
+  </div>
+
+        <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Person4:</label>
+    <div class="col-sm-4">
+      {{ form.name4 }}
+    </div>
+  </div>
+
+             <div class="form-group row">
+    <label class="col-sm-2 col-form-label">Person5:</label>
+    <div class="col-sm-4">
+      {{ form.name5 }}
+    </div>
+  </div>
+
+    <div class="form-group row">
+    <label class="col-sm-1 col-form-label"></label>
+    <div class="col-sm-4">
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+  </div>
+    </div>  
+</form>
+
+</body>
+{% endblock %}
+</html>
+    </center>

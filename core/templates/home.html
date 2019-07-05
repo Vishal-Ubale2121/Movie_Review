@@ -1,0 +1,98 @@
+<center>
+{% extends 'base.html' %}
+{% block content %}
+<body style="background-color:white">
+
+<div class="alert alert-success">
+  <h3>BOX OFFICE</h3>
+</div>
+
+
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  /* Make the image fully responsive */
+  .carousel-inner img {
+      width: 60%;
+      height: 60%;
+  }
+  </style>
+</head>
+<body>
+
+<div id="demo" class="carousel slide" data-ride="carousel">
+
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="static\images\kabir.jpg" alt="Kabir_Singh" width="800" height="100">
+    </div>
+    <div class="carousel-item">
+      <img src="static\images\Bharat.jfif" alt="Bharat" width="800" height="100">
+    </div>
+      <div class="carousel-item">
+      <img src="static\images\avengers.png" alt="Avengers" width="800" height="100">
+    </div>
+
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+
+</body>
+</html>
+<br>
+<br>
+<br>
+
+    <br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+        <br>
+<br>
+<br>
+
+    <br>
+<br>
+<br>
+
+        <br>
+<br>
+<br>
+        <br>
+<br>
+<br>
+
+
+      <form action="/emp" method="post" class="form">
+    {% csrf_token %}
+          <br>
+          <br>
+        <button type="submit" class="btn btn-info">StartApp</button>
+
+
+</form>
+{% endblock %}
+    </center>
